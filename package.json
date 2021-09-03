@@ -1,0 +1,14 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "description": "site one page de apresentação",
+  "main": "index.js",
+  "author": "adrian prado",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently -p \"[{name}]\" -n \"sass\" \"sass -w src/css/style.scss src/css/style.css\""
+  },
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  }
+}

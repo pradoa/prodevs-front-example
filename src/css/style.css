@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+body {
+  background-color: #efefef;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 6rem;
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section .container {
+  padding: 5rem;
+  min-width: 768px;
+}
+section#intro {
+  background-color: #000000;
+  background-image: url("../assets/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#intro video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 50% 25%;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0;
+}
+section#intro h1 {
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  text-shadow: 0px 2px 10px #000000;
+}
+section#intro p {
+  color: #ffffff;
+  font-size: 1.75rem;
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+}
+section#intro::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+section#about {
+  overflow: hidden;
+}
+section#about p {
+  margin: 4rem auto;
+  max-width: 50rem;
+  font-size: 1.5rem;
+}
+section#about h1 {
+  position: relative;
+  display: inline-block;
+}
+section#about h1 span {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+section#contact {
+  background-color: #000000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+section#contact h1 {
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+}
+section#contact p {
+  color: #ffffff;
+  font-size: 1.75rem;
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+}
+section#contact .bordered {
+  border: 2px #ffffff solid;
+  width: 100%;
+  padding: 2rem;
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */
